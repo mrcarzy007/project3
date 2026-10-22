@@ -9,7 +9,7 @@ pipeline {
                 sonar-scanner \
                       -Dsonar.projectKey=my-python-project \
                       -Dsonar.sources=. \
-                      -Dsonar.host.url=http://54.90.113.207:9000 \
+                      -Dsonar.host.url=http://34.226.197.185:9000 \
                       -Dsonar.login=sqa_4202215858d710d2845cba76489b5afc76812ec7
                       
                     '''
