@@ -25,7 +25,7 @@ pipeline {
         }
         stage("3 Push the Docker Hub"){
             steps{
-                withCredentials([usernamePassword(credentialsId: "docker-pass", usernameVariable : "USER", usernamePassword: "PASS")]){
+                withCredentials([usernamePassword(credentialsId: "docker-pass", usernameVariable : "USER", passwordVariable: "PASS")]){
                       sh "echo $PASS | docker login -u $USER --password-stdin"
                       sh "docker push devopsaditya123/py:v1"
                 }
